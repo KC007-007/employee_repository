@@ -1,0 +1,5 @@
+package com.drucare.employee.dao;
+
+public interface EmployeeDao {
+
+}

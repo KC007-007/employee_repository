@@ -1,0 +1,93 @@
+package com.drucare.employee;
+
+public class DeleteEmployeeBean {
+	
+		
+
+	String firstNm;
+	String LastNm;
+	String mobileNo;
+	String email;
+	String addressLine1;
+	String addressLine2;
+	
+	public String getFirstNm() {
+		return firstNm;
+	}
+
+	public void setFirstNm(String firstNm) {
+		this.firstNm = firstNm;
+	}
+
+	public String getLastNm() {
+		return LastNm;
+	}
+
+	public void setLastNm(String lastNm) {
+		LastNm = lastNm;
+	}
+
+	public String getMobileNo() {
+		return mobileNo;
+	}
+
+	public void setMobileNo(String mobileNo) {
+		this.mobileNo = mobileNo;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public String getAddressLine1() {
+		return addressLine1;
+	}
+
+	public void setAddressLine1(String addressLine1) {
+		this.addressLine1 = addressLine1;
+	}
+
+	public String getAddressLine2() {
+		return addressLine2;
+	}
+
+	public void setAddressLine2(String addressLine2) {
+		this.addressLine2 = addressLine2;
+	}
+
+	public DeleteEmployeeBean(String firstNm, String lastNm, String mobileNo, String email, String addressLine1,
+			String addressLine2) {
+		super();
+		this.firstNm = firstNm;
+		LastNm = lastNm;
+		this.mobileNo = mobileNo;
+		this.email = email;
+		this.addressLine1 = addressLine1;
+		this.addressLine2 = addressLine2;
+	}
+
+	@Override
+	public String toString() {
+		return "DeleteEmployeeBean [firstNm=" + firstNm + ", LastNm=" + LastNm + ", mobileNo=" + mobileNo + ", email="
+				+ email + ", addressLine1=" + addressLine1 + ", addressLine2=" + addressLine2 + "]";
+	}
+		
+
+		
+		
+
+
+		
+
+
+		
+
+		
+	}
+
+
+

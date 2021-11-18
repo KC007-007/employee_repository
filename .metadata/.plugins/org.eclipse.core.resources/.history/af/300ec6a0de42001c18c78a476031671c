@@ -1,0 +1,12 @@
+package com.drucare.employee.dao;
+
+import com.drucare.employee.Employee;
+
+public interface EmployeeDao {
+	
+	public Integer insert(Employee employee);
+	public  Integer delete(Long id);
+	public Integer update(Employee employee);
+	public Employee get(Long id);
+
+}

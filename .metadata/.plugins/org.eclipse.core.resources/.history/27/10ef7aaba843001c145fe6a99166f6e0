@@ -1,0 +1,50 @@
+package com.drucare.employee;
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+public class Employee {
+	
+    @Id
+	Long employeeId;
+	String employeeName;
+	Double employeeSalary;
+	
+	public Employee()
+	{
+	
+	}
+	
+	public Employee(Long employeeId, String employeeName, Double employeeSalary) {
+		super();
+		this.employeeId = employeeId;
+		this.employeeName = employeeName;
+		this.employeeSalary = employeeSalary;
+	}
+	public Long getEmployeeId() {
+		return employeeId;
+	}
+	public void setEmployeeId(Long employeeId) {
+		this.employeeId = employeeId;
+	}
+	public String getEmployeeName() {
+		return employeeName;
+	}
+	public void setEmployeeName(String employeeName) {
+		this.employeeName = employeeName;
+	}
+	public Double getEmployeeSalary() {
+		return employeeSalary;
+	}
+	public void setEmployeeSalary(Double employeeSalary) {
+		this.employeeSalary = employeeSalary;
+	}
+	@Override
+	public String toString() {
+		return "Employee [employeeId=" + employeeId + ", employeeName=" + employeeName + ", employeeSalary="
+				+ employeeSalary + "]";
+	}
+	
+	
+
+}

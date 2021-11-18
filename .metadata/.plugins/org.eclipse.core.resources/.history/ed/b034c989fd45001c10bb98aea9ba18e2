@@ -1,0 +1,40 @@
+package com.drucare.employee.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.drucare.employee.Employee;
+import com.drucare.employee.dao.EmployeeDao;
+
+@Service
+public class EmployeeServiceImpl implements EmployeeService {
+	
+	@Autowired
+	private EmployeeDao employeeDao;
+
+	@Override
+	public Integer addEmployee(Employee employee) {
+		// TODO Auto-generated method stub
+		
+		return employeeDao.insertEmployee(employee) ;
+	}
+
+	@Override
+	public Integer deleteEmployee(Long id) {
+		// TODO Auto-generated method stub
+		return employeeDao.deleteEmployeeById(id) ;
+	}
+
+	@Override
+	public Integer updateEmployee(Employee employee) {
+		// TODO Auto-generated method stub
+		return employeeDao.updateEmployee(employee);
+	}
+
+	@Override
+	public Employee getEmployeeById(Long id) {
+		// TODO Auto-generated method stub
+		return employeeDao.getEmployeeById(id);
+	}
+
+}

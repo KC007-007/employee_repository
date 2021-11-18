@@ -1,0 +1,16 @@
+package com.drucare.employee.dao;
+
+import com.drucare.employee.DeleteEmployeeBean;
+import com.drucare.employee.EmployeeBean;
+import com.drucare.employee.FetchEmployeeBean;
+import com.drucare.employee.InsertEmployeeBean;
+import com.drucare.employee.UpdateEmployeeBean;
+
+public interface EmployeeDao {
+	
+	public Boolean insertEmployeeDetail(InsertEmployeeBean insertEmployeeReq);
+	public  Boolean deleteEmployeeDetailById(DeleteEmployeeBean deleteEmployeeReq);
+	public Boolean updateEmployeeDetail(UpdateEmployeeBean updateEmployeeReq);
+	public FetchEmployeeBean fetchEmployeeDetailById(FetchEmployeeBean fetchEmployeeReq);
+
+}

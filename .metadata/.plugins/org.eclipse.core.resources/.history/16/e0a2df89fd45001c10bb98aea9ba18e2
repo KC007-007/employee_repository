@@ -1,0 +1,21 @@
+package com.drucare.employee;
+
+
+public class Employee {
+
+	
+	Long empId;
+	String empName;
+	Double empSal;
+
+	public Employee() {
+
+	}
+
+	
+
+
+
+
+	
+}

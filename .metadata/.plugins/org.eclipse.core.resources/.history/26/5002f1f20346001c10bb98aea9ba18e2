@@ -1,0 +1,12 @@
+package com.drucare.employee.service;
+
+import com.drucare.employee.EmployeeBean;
+
+public interface EmployeeService {
+	
+	public Integer addEmployee(EmployeeBean employee);
+	public  Integer deleteEmployee(Long id);
+	public Integer updateEmployee(EmployeeBean employee);
+	public EmployeeBean getEmployeeById(Long id);
+
+}

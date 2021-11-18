@@ -1,0 +1,12 @@
+package com.drucare.employee.dao;
+
+import com.drucare.employee.EmployeeBean;
+
+public interface EmployeeDao {
+	
+	public Boolean insertEmployeeDetail(EmployeeBean employee);
+	public  Integer deleteEmployeeDetailById(Integer id);
+	public Boolean updateEmployeeDetail(EmployeeBean employee);
+	public EmployeeBean fetchEmployeeDetailById(Integer id);
+
+}
